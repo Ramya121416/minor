@@ -1,0 +1,45 @@
+\newpage
+\begin{center}
+    \textbf{\LARGE CHAPTER - 9}
+\end{center}
+
+
+\section{LIMITATIONS AND FUTURE ENHANCEMENTS}
+% spandan
+\subsection{Limitations}
+This project is highly planned and acted upon from the beginning. Nevertheless, the project had to face some of the limitations due to various factors. Different aspects of the projects such as nature of data, visualisation methods, data storage method and so on have their own limitations. Some of the limitations faced by the project are:-
+
+\begin{enumerate}
+  \setlength\itemsep{1.5em}
+	\item Data Imbalance: The availability of MRI images with brain tumors is often imbalanced, with fewer positive (tumor) cases compared to negative (healthy) cases. This can lead to biased model training and reduced performance on rare tumor types.
+	\item Interpretability: CNNs are often considered "black box" models, making it difficult to explain why a particular prediction was made. This lack of interpretability can be a significant limitation, especially in medical applications where trust and transparency are crucial.
+	\item  Generalization: Transfer learning relies on pre-trained models on different datasets. If the source dataset is too dissimilar to the target (brain MRI), the transfer may not be as effective. Fine-tuning for the specific domain can mitigate this, but it's not always straightforward.
+	\item  Computational Resources: Training deep CNNs with transfer learning requires substantial computational resources. Smaller healthcare institutions or clinics with limited computing power may face difficulties implementing such models.
+	\item Data Quality: The quality of MRI images can vary widely, affecting the model's ability to detect tumors accurately. Noise, artifacts, and inconsistent image quality can be challenging to handle.
+\end{enumerate}
+
+\newpage
+\subsection{Future Enhancements}
+
+Future enhancements for the Detecting of brain tumor in MRI’s using a convolutional neural networks with transfer learning can be planned to further improve its capabilities and address emerging needs. Some potential areas for enhancement include:
+
+\begin{enumerate}
+  \setlength\itemsep{1.5em}
+    \item Data Augmentation: Enhance the dataset with various data augmentation techniques to reduce the impact of data imbalance and improve model generalization. Augmentation can include rotations, translations, scaling, and adding noise.
+
+	\item Diverse Transfer Learning: Investigate the use of diverse pre-trained models that have been trained on medical image datasets to ensure better alignment with the target domain. This can enhance the model's ability to extract relevant features.
+	
+	\item  Interpretability: Develop methods for making CNNs more interpretable. Techniques such as attention maps, saliency maps, and gradient-based attribution can help provide insight into which regions of an MRI image influenced the model's decision.
+	
+	
+	\item Ensemble Models: Combine multiple CNN models, each trained with a different architecture or initialization, to improve overall performance and reduce the risk of model bias.
+	
+	\item Continuous Learning: Implement continuous learning frameworks that allow the model to adapt over time as new data becomes available, ensuring it stays up-to-date with the latest medical knowledge.
+	
+
+	\item  Hardware Acceleration: Explore hardware acceleration solutions (e.g., GPUs, TPUs) to make the model more accessible to healthcare facilities with limited computational resources.
+	
+		\item  Privacy and Security: Develop robust mechanisms for protecting patient privacy and ensuring the security of medical data, especially when implementing these models in healthcare systems.
+  \item Integration: Integrate the model into existing healthcare information systems and workflows to facilitate seamless diagnosis and patient care.
+	          
+\end{enumerate}

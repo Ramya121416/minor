@@ -1,0 +1,115 @@
+\newpage
+%\pagenumbering{arabic}
+\begin{center}
+    \textbf{\LARGE CHAPTER - 2}
+\end{center}
+\section{LITERATURE SURVEY}
+ The human body is composed of a variety of cell
+types. The brain is a delicate and highly specialised organ
+of the human body. The benign or malignant form of brain
+tumour can be identified. The malignant is cancerous whereas
+the benign is not. Malignant tumor is classified into two types:
+primary and secondary tumor. Detection of brain tumor is an
+one of the challenge for human because of its structure.
+Tumors are divided into primary and secondary categories.
+Because of its structure, detecting brain tumours is one of the
+most difficult tasks for humans.
+Brain picture segmentation is necessary for brain tumour
+detection. Segmenting MR images of the brain manually is
+challenging. It takes a lot of time, is a difficult process
+that cannot be repeated, needs non-uniform segmentation, and
+segmentation outcomes might differ from expert to expert.
+Automated brain tumour segmentation and identification is
+fraught with problems. Brain tumour segmentation is a challenging problem for an autonomous computer system since it
+requires pathology, MRI physics, as well as intensity and form
+analysis of the MRI picture. The main problem in segmenting
+brain tumours is that they differ in terms of form, size,
+location, and picture intensities. A computer-aided approach
+for brain tumour identification and segmentation is preferable
+since manual segmentation of brain tumours involves human
+specialists and takes a lot of time.
+Therefore in this situation, computer assisted system is beneficial. The classification of the brain MR image as normal
+or tumorous should be accurate and take less time with an
+automated brain tumour detection method. It must be reliable
+and provide radiologists an intuitive, user-friendly solution that
+is self-explanatory
+The most fatal illness, brain tumours have an extremely low
+life expectancy in their most severe form. Brain tumour misdiagnosis will lead to ineffective medical treatment and lower
+patient survival rates. Developing an appropriate treatment
+strategy to treat and prolong the lives of people with brain
+tumours depends on making an accurate diagnosis of the
+disease.
+Using clinical brain scans, Balakumar et al. [2] developed
+an automated segmentation of brain tumour identification.
+Compared to manual tumour analysis, automatic segmentation
+of brain tumours is far superior. In this study, the brain tumour
+areas are to be retrieved using region-based segmentation. For
+additional processing, the shape, intensity, and texture-based
+characteristics need to be extracted. The post processing technique may be used to do the spatial regularisation. The strength
+of this research is in its ability to categorise structural elements
+into normal and pathological tissue using discriminative traits,
+which further reduces complexity. The paper’s flaw is that the
+edge-based approach fails when the image is too complicated
+or blurry to clearly show a boundary.
+A probabilistic neural network-based method for identifying
+brain tumours was proposed by Dina Aboul Dahab et al. In this
+study, a customised PNN model is built utilising MRI scans
+to analyse data and images while learning vector quantization.
+At the preprocessing stage, the image’s edges are smoothed
+using a Gaussian filter. The color-based segmentation approach
+should be utilised in this situation since it produces better
+results than the kmeans algorithm. ROI uses a modified version
+of the canny edge-based detection technique. The postprocessing stage makes use of the modified PNN algorithm. This
+paper’s benefit is that it uses a PNN system based on LVQ,
+which lengthens processing time by around 79 percentage of
+CNN in PNN.
+In recent years, it has been possible to identify brain tumours
+in MRI scans using machine learning techniques, most specifically CNN. Yet, the idea of employing MRIs dates to 1984.
+For many years, MRI has been a vital imaging tool in the
+detection and management of brain malignancies. Manual MRI
+interpretation, however, can be laborious, error-prone, and
+vulnerable to inter-observer variability. As a result, computeraided diagnosis (CAD) systems have been created to help
+radiologists analyse medical pictures.
+Convolutional neural networks (CNNs) with transfer learning
+have been used to identify brain cancers in MRIs as early
+as 2010. Deep learning was becoming more popular at the
+time, and scientists were investigating its potential uses in the
+processing of medical images. CNN makes it easier to identify
+the tumour and takes less time
+Havaei et al. carried out one of the first investigations in this
+area in 2014. Using T1- weighted contrast-enhanced MRIs,
+they classified brain cancers into four groups using a CNN
+(glioma, meningioma, pituitary adenoma, and healthy brain
+tissue). The network’s accuracy was 90.5being trained on a
+dataset of 220 patients.
+Another team of University of Michigan researchers
+employed transfer learning in 2016 to create a CNN-based
+technique for automatically classifying brain tumours in MRI
+images. The technique employed a pre-trained CNN model,
+which was then refined using a collection of brain MRI
+images that had tumour locations labelled. The model was
+quite accurate in differentiating between various kinds of
+brain cancers. With MRI images, they employed a CNN with
+transfer learning to find brain cancers. To extract features from
+MRI scans, they employed a pre-trained model (VGG16),
+which was initially trained on the ImageNet dataset. They
+subsequently improved the model using a dataset of brain
+tumour MRIs, and 97 percentage accuracy was attained
+\begin{table}[H]
+    \centering
+    \caption{\small analysis of differents methods.}
+   \scriptsize
+    \begin{tabular}{lrrrrrrrrrr}
+\toprule
+{} &  \small Name  &  \small accuarcy   \\
+
+\midrule
+1 &    InceptionNet  &    85 percentage   \\
+2 &    resNet50  &    89 percentage  \\
+3 &    vgg16  &   95 percentage\\
+
+\bottomrule
+\end{tabular}
+    
+    \label{fig:posterior}
+\end{table}

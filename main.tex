@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage{report}
+
+%\usepackage[acronym]{glossaries}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage[justification=centering]{caption}
+%\captionsetup[figure]{font=small
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{chngcntr}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{tocloft}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+%\usepackage[acronym,nomain]{glossaries}
+% \usepackage{pracalik}
+\usepackage{acronym}
+%\makeglossaries
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{ieeetr}
+%\bibliographystyle{abbrvnat}
+%\usepackage[sectionbib]{natbib}
+%\usepackage{chapterbib}
+%\usepackage{biblatex} %Imports biblatex package
+%\bibliographystyle{ieeetr}
+%\addbibresource{biblio.bib}
+
+%\renewcommand{cfttoctitlefont}{12pt}
+\setcounter{secnumdepth}{3} % for subheadings
+\setlength{\cfttabindent}{0pt} %for tables
+\setlength{\cftfigindent}{0pt} %for figures
+
+
+\title{Tr-Level Segmented CNN }
+\author{ GROUP 04 }
+\date{\today}
+
+
+
+\begin{document}
+
+
+\input{sec/titlepage}
+
+
+\pagenumbering{roman} % roman page numbers
+
+
+\input{sec/certificate of approval}
+
+%% Put declaration, letter of approval and copyright only in the final report
+\input{sec/declaration}
+
+
+
+%% This is constant for all the reports 
+\input{sec/acknowledgment}
+
+\input{sec/Abstract}
+
+\input{sec/List of Figures}
+
+\input{sec/List of Tables}
+
+\input{sec/List of Abbrevations}
+
+% Table of contents
+
+\newpage
+{
+  \setlength{\parskip}{0em}
+  \renewcommand\contentsname{TABLE OF CONTENTS} % This will change heading text
+  \tableofcontents %\addcontentsline{toc}{section}{TABLE OF CONTENTS}
+}
+
+
+
+% List of Abbreviation- if any
+
+\newpage
+
+\input{sec/introduction}
+\input{sec/Literature Survey}
+\input{sec/Requirement Analysis}
+\input{sec/Design Specification}
+\input{sec/methodology}
+\input{sec/implementation}
+\input{sec/observations}
+\input{sec/conclusion}
+\input{sec/limitations}
+\input{sec/appendix} 
+
+
+%visit http://scholar.google.com/ search and get BibTeX format and paste in biblio.bib file
+
+
+\end{document}
